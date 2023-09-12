@@ -183,6 +183,26 @@
       font-size: 20px;
       font-weight: bold;
     }
+    #providerSectionWithSearch {
+      display: none;
+    }
+    .search-provider {
+      width: 49%;
+      margin-right: 5px;
+      vertical-align: top;
+    }
+    #searchButton {
+      width: 100px;
+    }
+    @media screen and (max-width: 991px) {
+      #searchButton {
+        width: 100%;
+      }
+      .search-provider {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
     
   </style>
   <script type="text/javascript">
@@ -252,7 +272,7 @@
                       src="./images/icons/email.svg" />support-urbanwebs@gmail.com</a></li>
                 <li><a href="tel:9123864774"><img style="width: 20px; margin-right: 5px;"
                       src="./images/icons/phone.svg" />9123864774</a> </li>
-                <li><a href="" onclick="window.open('https://wa.me/8240592073')"><img style="width: 20px; margin-right: 5px;"
+                <li><a href="" onclick="window.open('https://wa.me/8240592073?text=Hi,%20welcome%20to%20urbanwebS.%20Here%20are%20the%20categories%0A%20plumbing%0A%20home%20cleaning')"><img style="width: 20px; margin-right: 5px;"
                       src="./images/icons/whatsapp.svg" />7595909678</a> </li>
               </ul>
             </div>
@@ -282,7 +302,7 @@
                 <a href="/" aria-current="page">Home</a>
               </li>
               <li id="menu-item-5172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5172"><a
-                  href="" onclick="window.open('https://wa.me/8240592073')">Whatsapp</a></li>
+                  href="" onclick="window.open('https://wa.me/8240592073?text=Hi,%20welcome%20to%20urbanwebS.%20Here%20are%20the%20categories%0A%20plumbing%0A%20home%20cleaning')">Whatsapp</a></li>
             </ul>
           </div>
           <div class="body-overlay" style="display: none;"></div>
@@ -296,7 +316,7 @@
               data-key="rs-1" data-title="SOFAS" data-thumb="./images/bg.jpg" data-duration="4000" data-anim="r:0;"
               data-in="o:0;"> <img src="./images/bg.jpg" title="slider-bg" width="1920" height="648"
                 class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="./images/bg.jpg" data-no-retina> <rs-layer
-                onclick="window.open('https://wa.me/8240592073')" id="slider-1-slide-1-layer-9" class="rev-btn"
+                onclick="window.open('https://wa.me/8240592073?text=Hi,%20welcome%20to%20urbanwebS.%20Here%20are%20the%20categories%0A%20plumbing%0A%20home%20cleaning')" id="slider-1-slide-1-layer-9" class="rev-btn"
                 data-type="button" data-color="rgba(255,255,255,1)"
                 data-xy="xo:0,20px,20px,20px;yo:439px,343px,255px,214px;"
                 data-text="s:17,14,12,12;l:17,14,12,12;fw:500;a:inherit;" data-rsp_bd="off"
@@ -370,298 +390,61 @@
           type="text/javascript">setREVStartSize({ c: 'rev_slider_1_1', rl: [1240, 1024, 778, 480], el: [700, 500, 400, 300], gw: [1170, 1024, 778, 480], gh: [700, 500, 400, 300], type: 'standard', justify: '', layout: 'fullwidth', mh: "0" }); if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider11"] !== undefined) { window.RS_MODULES.modules["revslider11"].once = false; window.revapi1 = undefined; if (window.RS_MODULES.checkMinimal !== undefined) window.RS_MODULES.checkMinimal() }</script>
       </rs-module-wrap>
       <div class="sf-find-bar  pos-v-bottom">
-        <div class="container">
+        <div class="container" style="width: 400px;">
           <div class="search-form ">
             <form class="clearfix search-providers">
               <input type="hidden" name="s" value="">
-              <div class="sf-advace-search-btn openadvsrh2"><i class="fa fa-chevron-up"></i></div>
               <div class="sf-searchbar-table">
                 <div class="sf-searchbar-left">
                   <ul class="clearfix sf-searchfileds-count-5">
-                    <li> <input type="text" value="" placeholder="Keyword" id="keyword" name="keyword"
-                        class="form-control sf-form-control"></li>
-                    <li> <input type="text" value="" placeholder="Address" id="searchAddress" name="searchAddress"
-                        class="form-control sf-form-control"></li>
-                    <li> <select id="categorysrh" name="catid" class="form-control sf-form-control sf-select-box"
-                        title="Category" data-live-search="true" data-header="Select a Category">
-                        <option value=""> Select a Category</option>
-                        <option value="13" data-content="<span>Automotive</span>">Automotive</option>
-                        <option value="17"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/cabservive-60x60.jpg&gt;<span class='childcat'>Cab Service</span>">
-                          Cab Service</option>
-                        <option value="30"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_32995065-1-60x60.jpg&gt;<span class='childcat'>Car Dealers</span>">
-                          Car Dealers</option>
-                        <option value="19"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_50879715-60x60.jpg&gt;<span class='childcat'>Car care and Servicing</span>">
-                          Car care and Servicing</option>
-                        <option value="15" data-content="<span>Beauty and Personal Care</span>">Beauty and Personal Care
-                        </option>
-                        <option value="16" data-content="<span>Business</span>">Business</option>
-                        <option value="31"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_45198006-1-60x60.jpg&gt;<span class='childcat'>Event Organizer</span>">
-                          Event Organizer</option>
-                        <option value="32"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_xl_45140294-600x450-2-60x60.jpg&gt;<span class='childcat'>Finance and Legal</span>">
-                          Finance and Legal</option>
-                        <option value="33"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_32481046-60x60.jpg&gt;<span class='childcat'>Finance and Marketing</span>">
-                          Finance and Marketing</option>
-                        <option value="35"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_58366152-1-60x60.jpg&gt;<span class='childcat'>IT/Web Development</span>">
-                          IT/Web Development</option>
-                        <option value="34"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_38993507-60x60.jpg&gt;<span class='childcat'>Interior Decorator</span>">
-                          Interior Decorator</option>
-                        <option value="36" data-content="<span>Child Care</span>">Child Care</option>
-                        <option value="37"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_63266723-2-60x60.png&gt;<span class='childcat'>Child Care Center</span>">
-                          Child Care Center</option>
-                        <option value="38"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/Pediatrician222222222222222-60x60.png&gt;<span class='childcat'>Pediatrician</span>">
-                          Pediatrician</option>
-                        <option value="39" data-content="<span>Cleaning</span>">Cleaning</option>
-                        <option value="40"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_55856438-2-60x60.jpg&gt;<span class='childcat'>Home Cleaning</span>">
-                          Home Cleaning</option>
-                        <option value="41"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_41010012-2-60x60.jpg&gt;<span class='childcat'>Landscaping</span>">
-                          Landscaping</option>
-                        <option value="42"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_xl_14208685-60x60.jpg&gt;<span class='childcat'>Laundry</span>">
-                          Laundry</option>
-                        <option value="43" data-content="<span>Computer/Mobile Repair Service</span>">Computer/Mobile
-                          Repair Service</option>
-                        <option value="44"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_52983649-1-60x60.jpg&gt;<span class='childcat'>Computer Repair</span>">
-                          Computer Repair</option>
-                        <option value="45"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_55463940-2-60x60.jpg&gt;<span class='childcat'>Mobile Repair</span>">
-                          Mobile Repair</option>
-                        <option value="20" data-content="<span>Food and Drinks</span>">Food and Drinks</option>
-                        <option value="28"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_58870964-60x60.jpg&gt;<span class='childcat'>Cafe</span>">
-                          Cafe</option>
-                        <option value="46"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_m_13613869-60x60.jpg&gt;<span class='childcat'>Fast Food</span>">
-                          Fast Food</option>
-                        <option value="47"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_24554271-2-60x60.jpg&gt;<span class='childcat'>Pubs and Bars</span>">
-                          Pubs and Bars</option>
-                        <option value="48"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_35610757-1-60x60.jpg&gt;<span class='childcat'>Restaurants</span>">
-                          Restaurants</option>
-                        <option value="49" data-content="<span>General Labor</span>">General Labor</option>
-                        <option value="50"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_39777401-1-60x60.jpg&gt;<span class='childcat'>Carpainter</span>">
-                          Carpainter</option>
-                        <option value="51"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_21803361-60x60.jpg&gt;<span class='childcat'>Electrician</span>">
-                          Electrician</option>
-                        <option value="52"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_16980472-60x60.jpg&gt;<span class='childcat'>Plumber</span>">
-                          Plumber</option>
-                        <option value="53" data-content="<span>Health and Fitness</span>">Health and Fitness</option>
-                        <option value="54"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_51545557-60x60.jpg&gt;<span class='childcat'>Gym</span>">
-                          Gym</option>
-                        <option value="55"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_28730076-2-60x60.jpg&gt;<span class='childcat'>Yoga</span>">
-                          Yoga</option>
-                        <option value="56" data-content="<span>Health Care</span>">Health Care</option>
-                        <option value="57"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/cardiologist-60x60.png&gt;<span class='childcat'>Cardiologist</span>">
-                          Cardiologist</option>
-                        <option value="58"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_2249749-1-60x60.jpg&gt;<span class='childcat'>Dentist</span>">
-                          Dentist</option>
-                        <option value="59"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_m_54013566-60x60.jpg&gt;<span class='childcat'>Neurosurgeon</span>">
-                          Neurosurgeon</option>
-                        <option value="60"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_m_47748112-60x60.jpg&gt;<span class='childcat'>Physician</span>">
-                          Physician</option>
-                        <option value="61" data-content="<span>Pet</span>">Pet</option>
-                        <option value="62"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_63738020-60x60.jpg&gt;<span class='childcat'>Pet Care</span>">
-                          Pet Care</option>
-                        <option value="63"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_14181688-60x60.jpg&gt;<span class='childcat'>Pet Dealers</span>">
-                          Pet Dealers</option>
-                        <option value="64" data-content="<span>Traning and Education</span>">Traning and Education
-                        </option>
-                        <option value="65"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_44337816-1-60x60.jpg&gt;<span class='childcat'>Car Driving</span>">
-                          Car Driving</option>
-                        <option value="66"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/le_spike-prime_lifestyle_1hy19_45678_13-367fe2f5f606bdb8b8ea19ba256f5a34-1-60x60.jpg&gt;<span class='childcat'>Coaching Center</span>">
-                          Coaching Center</option>
-                        <option value="67"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_45479513-60x60.jpg&gt;<span class='childcat'>Dance</span>">
-                          Dance</option>
-                        <option value="68"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_43522667-1-60x60.jpg&gt;<span class='childcat'>Sports Club</span>">
-                          Sports Club</option>
-                        <option value="69" data-content="<span>Transportation and Travel</span>">Transportation and
-                          Travel</option>
-                        <option value="70"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_567298000-1-60x60.jpg&gt;<span class='childcat'>Packers and Movers</span>">
-                          Packers and Movers</option>
-                        <option value="71"
-                          data-content="&lt;img class=&#039;childcat-img&#039; width=&#039;50&#039; height=&#039;auto&#039; src=https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/05/dreamstime_l_65092943-60x60.jpg&gt;<span class='childcat'>Tour Operators</span>">
-                          Tour Operators</option>
-                      </select></li>
-                    <li> <select class="sf-select-box form-control sf-form-control" data-live-search="true"
-                        name="country" id="country" title="Country" data-header="Select a Country">
-                        <option value="">Select Country</option>
-                        <option value="Turkey">Turkey</option>
-                        <option value="United States">United States</option>
-                      </select></li>
-                    <li> <select class="sf-select-box form-control sf-form-control" data-live-search="true" name="city"
-                        id="city" title="City" data-header="Select a City">
-                        <option value="">Select City</option>
+                    <li style="width: 100%;"> <select id="categoryId" name="catid" class="form-control sf-form-control sf-select-box"
+                        title="Category">
+                        <option value="All">All</option>
+                        <option value="Plumbing">Plumbing</option>
+                        <option value="Home">Home Cleaning</option>
+                        <option value="Kitchen">Kitchen Cleaning</option>
+                        <option value="Bathroom">Bathroom Cleaning</option>
+                        <option value="Sofa">Sofa & Carpet Cleaning</option>
                       </select></li>
                   </ul>
                 </div>
-                <div class="sf-searchbar-right"> <button class="btn btn-primary"><i class="fa fa-search"></i> Search
-                    Now</button></div>
-              </div>
-              <div class="sf-advace-search-two default-hidden">
-                <div class="row">
-                  <div class="col-md-6  col-sm-6">
-                    <h5 class="sf-tilte">Filter by price interval:</h5> <b>&#36;0.00</b> <input name="price" type="text"
-                      class="sf-price-filter span2" value="" data-slider-min="0" data-slider-max="1000"
-                      data-slider-step="5" data-slider-value="[0,1000]" /> <b>&#36;1,000.00</b>
-                  </div>
-                  <div class="col-md-6  col-sm-6">
-                    <h5 class="sf-tilte">Filter by Radius:</h5> <b>0 Mi.</b> <input class="sf-radius-filter"
-                      name="distance" data-slider-id="ex1Slider" type="text" data-slider-min="0 " data-slider-max="1000"
-                      data-slider-step="1" data-slider-value="" /> <b>1000 Mi.</b>
-                  </div>
-                </div>.
+                <div class="sf-searchbar-right" id="searchButton"> <button class="btn btn-primary" type="button" onclick="search()"> Search
+                  </button></div>
               </div>
               <div class="loading-srh-bar default-hidden"><i class="fa fa-spinner fa-pulse"></i></div>
             </form>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-full bg-gray sf-cateoriess-wrap" style="background:url() center fixed no-repeat;">
-      <div class="sf-cateoriess-half-bg"></div>
-      <div class="container">
-        <div class="section-head text-center">
-          <h2 class="text-white" style="color:#ffffff">Services Finder Categories</h2>
-          <div class="sf-tagile-outer" style="color:#939393"></div>
-        </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="categories-box-slider">
-              <div class="item">
-                <div class="sf-categoriesBox ">
-                  <div class="sf-categoriesBox-pic"><img class="" src="./images/services/plumber.webp"
-                      data-src="./images/services/plumber.webp" width="600" height="350" alt="Plumbing"></div>
-                  <div class="sf-categoriesBox-info">
-                    <h4 class="sf-categoriesBox-title">Plumbing Services</h4>
-                    <div class="sf-categoriesBox-text"></div>
-                  </div>
-                </div> <a href="" class="sf-category-link"></a>
-              </div>
-              <div class="item">
-                <div class="sf-categoriesBox ">
-                  <div class="sf-categoriesBox-pic"><img src="./images/services/home.webp"
-                      data-src="./images/services/home.webp" width="600" height="350" alt="Home"></div>
-                  <div class="sf-categoriesBox-info">
-                    <h4 class="sf-categoriesBox-title">Home Cleaning</h4>
-                    <div class="sf-categoriesBox-text"></div>
-                  </div>
-                </div> <a href="" class="sf-category-link"></a>
-              </div>
-              <div class="item">
-                <div class="sf-categoriesBox ">
-                  <div class="sf-categoriesBox-pic"><img src="./images/services/kitchen.webp"
-                      data-src="./images/services/kitchen.webp" width="600" height="350" alt="Kitchen Cleaning"></div>
-                  <div class="sf-categoriesBox-info">
-                    <h4 class="sf-categoriesBox-title">Kitchen Cleaning</h4>
-                    <div class="sf-categoriesBox-text"></div>
-                  </div>
-                </div> <a href="" class="sf-category-link"></a>
-              </div>
-              <div class="item">
-                <div class="sf-categoriesBox ">
-                  <div class="sf-categoriesBox-pic"><img src="./images/services/sofa.webp"
-                      data-src="./images/services/sofa.webp" width="600" height="350" alt="Sofa Cleaning"></div>
-                  <div class="sf-categoriesBox-info">
-                    <h4 class="sf-categoriesBox-title">Sofa Cleaning</h4>
-                    <div class="sf-categoriesBox-text"></div>
-                  </div>
-                </div> <a href="" class="sf-category-link"></a>
-              </div>
-              <div class="item">
-                <div class="sf-categoriesBox ">
-                  <div class="sf-categoriesBox-pic"><img src="./images/services/bathroom.webp"
-                      data-src="./images/services/bathroom.webp" width="600" height="350" alt="Bathroom Cleaning"></div>
-                  <div class="sf-categoriesBox-info">
-                    <h4 class="sf-categoriesBox-title">Bathroom Cleaning</h4>
-                    <div class="sf-categoriesBox-text"></div>
-                  </div>
-                </div> <a href="" class="sf-category-link"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sf-curve-topWrap">
-        <div class="sf-curveTop sf-cateori-curveTop" style="background-color:#7754f4"></div>
-      </div>
-      <div class="sf-curve-botWrap">
-        <div class="sf-curveBot sf-cateori-curveBot" style="background-color:#62b815"></div>
-      </div>
-      <div class="sf-overlay-main" style="opacity:0.8; background-color:#eff3f6 ">
-    </section>
-    <section class="section-full text-center sf-howServFinder-wrap"
-      style="background-image:url(); background-attachment: fixed">
-      <div class="container">
-        <div class="section-head">
-          <h2 class="text-white" style="color:#ffffff">How Service Finder Works</h2>
-          <div class="sf-tagile-outer" style="color:#ffffff">Best Service Deals</div>
-        </div>
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-4 col-sm-4">
-              <div class="sf-howServFinWork-box padding-lr-40">
-                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/describe.png"
-                    data-src="./images/icons/describe.png" alt=""> <span class="sf-no-step text-primary">1</span></div>
-                <h4 class="sf-tilte text-white">Find Your Service</h4>
-                <p>This helps us find your desired service</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="sf-howServFinWork-box padding-lr-40">
-                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/tasker.png"
-                    data-src="./images/icons/tasker.png" alt=""> <span class="sf-no-step text-primary">2</span></div>
-                <h4 class="sf-tilte text-white">Choose a Tasker</h4>
-                <p>This helps us determine which Taskers are best for your service</p>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4">
-              <div class="sf-howServFinWork-box padding-lr-40">
-                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/child-care-1.png" data-lazy-type="image"
-                    data-src="./images/icons/child-care-1.png" alt=""> <span class="sf-no-step text-primary">3</span>
-                </div>
-                <h4 class="sf-tilte text-white">Contact Us</h4>
-                <p>Contact us to get your service done</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sf-curve-topWrap">
-        <div class="sf-curveTop sf-howitwork-curveTop" style="background-color:#7042e1"></div>
-      </div>
-      <div class="sf-curve-botWrap">
-        <div class="sf-curveBot sf-howitwork-curveBot" style="background-color:#62b815"></div>
-      </div>
-      <div class="sf-overlay-main" style="opacity:; background-color:#7042e1 ">
+      <script>
+        const search = () => {
+          const selectVal = document.getElementById("categoryId");
+          if (selectVal.value && selectVal.value !== "All") {
+            
+            const notSearchSection = document.getElementById("providerSectionWithoutSearch");
+            notSearchSection.style.display = "none";
+            const searchSection = document.getElementById("providerSectionWithSearch");
+            searchSection.style.display = "block";
+            
+            const searchClass = document.getElementsByClassName(selectVal.value);
+            const allClass = document.getElementsByClassName("search-provider");
+            for (let i = 0; i < allClass.length; i++) {
+              if (allClass[i].className && !allClass[i].className.includes(selectVal.value)) {
+                allClass[i].style.display = "none";
+              } else {
+                allClass[i].style.display = "inline-block";
+              }
+            }
+            console.log("hello ", selectVal.value, searchClass);
+          } else {
+            const notSearchSection = document.getElementById("providerSectionWithoutSearch");
+            notSearchSection.style.display = "block";
+            const searchSection = document.getElementById("providerSectionWithSearch");
+            searchSection.style.display = "none";
+          }
+          
+        };
+      </script>
     </section>
     <section class="section-full bg-white sf-featurProviders-wrap"
       style="background-image:url(); background-attachment: scroll">
@@ -672,7 +455,7 @@
             <p>Best Service Deals</p>
           </div>
         </div>
-        <div class="section-content">
+        <div class="section-content" id="providerSectionWithoutSearch">
           <div class="row">
             <div class="featured-box-slider">
               <div class="item">
@@ -804,6 +587,132 @@
             </div>
           </div>
         </div>
+        <div class="section-content" id="providerSectionWithSearch">
+          <div class="row">
+            <div class="xfeatured-box-slider">
+                <div id="proid-35" class="Plumbing Home search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/deep.webp"
+                        data-src="./images/providers/deep.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Deep Kumar Mondal</h4>
+                      <div class="sf-feaProvideer-address">Exp. 18 Years</div>
+                      <div class="sf-feaProvideer-text">Plumbing & Home Cleaning expert</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="proid-34" class="Plumbing search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/bipin.webp"
+                        data-src="./images/providers/bipin.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />  
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Bipin Biswas</h4>
+                      <div class="sf-feaProvideer-address">Exp. 15 Years</div>
+                      <div class="sf-feaProvideer-text">Plumbing expert</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="proid-29" class="Plumbing search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/biswahari.webp"
+                        data-src="./images/providers/biswahari.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />  
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Biswahari Mondal</h4>
+                      <div class="sf-feaProvideer-address">Exp. 12 Years</div>
+                      <div class="sf-feaProvideer-text">Plumbing expert</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="proid-28" class="Home Bathroom Sofa Kitchen search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/biswarup.webp"
+                        data-src="./images/providers/biswarup.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />  
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Biswarup Patra</h4>
+                      <div class="sf-feaProvideer-address">Exp. 12 Years</div>
+                      <div class="sf-feaProvideer-text">Home Deep Cleaning,
+                        Bathroom Cleaning,
+                        Sofa & Carpet Cleaning,
+                        Kitchen Cleaning expert</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="proid-31" class="Plumbing search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/mithun.webp"
+                        data-src="./images/providers/mithun.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />  
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Mithun Sarkar</h4>
+                      <div class="sf-feaProvideer-address">Exp. 12 Years</div>
+                      <div class="sf-feaProvideer-text">Plumbing expert</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="proid-30" class="home Bathroom Sofa Kitchen search-provider">
+                  <div class="sf-feaProvideer-wrap clearfix">
+                    <div class="sf-feaProvideer-label">Featured</div>
+                    <div class="sf-feaProvideer-pic"><img src="./images/providers/shyamal.webp"
+                        data-src="./images/providers/shyamal.webp" alt=""></div>
+                    <div class="sf-feaProvideer-info">
+                      <div class="sf-show-rating default-hidden">
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />
+                        <img src="./images/icons/star.svg" style="width: 15px; display: inline-block;" />  
+                      </div>
+                      <h4 class="sf-feaProvideer-title">Shyamal Sarkar</h4>
+                      <div class="sf-feaProvideer-address">Exp 7 Years</div>
+                      <div class="sf-feaProvideer-text">Home Deep Cleaning,
+                        Bathroom Cleaning,
+                        Sofa & Carpet Cleaning,
+                        Kitchen Cleaning</div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="sf-curve-topWrap">
         <div class="sf-curveTop sf-feaPro-curveTop" style="background-color:#7754f4"></div>
@@ -813,6 +722,124 @@
       </div>
       <div class="sf-overlay-main" style="opacity:; background-color:#ffffff ">
     </section>
+    <section class="section-full bg-gray sf-cateoriess-wrap" style="background:url() center fixed no-repeat;">
+      <div class="sf-cateoriess-half-bg"></div>
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="text-white" style="color:#ffffff">Services Finder Categories</h2>
+          <div class="sf-tagile-outer" style="color:#939393"></div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="categories-box-slider">
+              <div class="item">
+                <div class="sf-categoriesBox ">
+                  <div class="sf-categoriesBox-pic"><img class="" src="./images/services/plumber.webp"
+                      data-src="./images/services/plumber.webp" width="600" height="350" alt="Plumbing"></div>
+                  <div class="sf-categoriesBox-info">
+                    <h4 class="sf-categoriesBox-title">Plumbing Services</h4>
+                    <div class="sf-categoriesBox-text"></div>
+                  </div>
+                </div> <a href="" class="sf-category-link"></a>
+              </div>
+              <div class="item">
+                <div class="sf-categoriesBox ">
+                  <div class="sf-categoriesBox-pic"><img src="./images/services/home.webp"
+                      data-src="./images/services/home.webp" width="600" height="350" alt="Home"></div>
+                  <div class="sf-categoriesBox-info">
+                    <h4 class="sf-categoriesBox-title">Home Cleaning</h4>
+                    <div class="sf-categoriesBox-text"></div>
+                  </div>
+                </div> <a href="" class="sf-category-link"></a>
+              </div>
+              <div class="item">
+                <div class="sf-categoriesBox ">
+                  <div class="sf-categoriesBox-pic"><img src="./images/services/kitchen.webp"
+                      data-src="./images/services/kitchen.webp" width="600" height="350" alt="Kitchen Cleaning"></div>
+                  <div class="sf-categoriesBox-info">
+                    <h4 class="sf-categoriesBox-title">Kitchen Cleaning</h4>
+                    <div class="sf-categoriesBox-text"></div>
+                  </div>
+                </div> <a href="" class="sf-category-link"></a>
+              </div>
+              <div class="item">
+                <div class="sf-categoriesBox ">
+                  <div class="sf-categoriesBox-pic"><img src="./images/services/sofa.webp"
+                      data-src="./images/services/sofa.webp" width="600" height="350" alt="Sofa Cleaning"></div>
+                  <div class="sf-categoriesBox-info">
+                    <h4 class="sf-categoriesBox-title">Sofa Cleaning</h4>
+                    <div class="sf-categoriesBox-text"></div>
+                  </div>
+                </div> <a href="" class="sf-category-link"></a>
+              </div>
+              <div class="item">
+                <div class="sf-categoriesBox ">
+                  <div class="sf-categoriesBox-pic"><img src="./images/services/bathroom.webp"
+                      data-src="./images/services/bathroom.webp" width="600" height="350" alt="Bathroom Cleaning"></div>
+                  <div class="sf-categoriesBox-info">
+                    <h4 class="sf-categoriesBox-title">Bathroom Cleaning</h4>
+                    <div class="sf-categoriesBox-text"></div>
+                  </div>
+                </div> <a href="" class="sf-category-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sf-curve-topWrap">
+        <div class="sf-curveTop sf-cateori-curveTop" style="background-color:#7754f4"></div>
+      </div>
+      <div class="sf-curve-botWrap">
+        <div class="sf-curveBot sf-cateori-curveBot" style="background-color:#62b815"></div>
+      </div>
+      <div class="sf-overlay-main" style="opacity:0.8; background-color:#eff3f6 ">
+    </section>
+    <section class="section-full text-center sf-howServFinder-wrap"
+      style="background-image:url(); background-attachment: fixed">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="text-white" style="color:#ffffff">How Service Finder Works</h2>
+          <div class="sf-tagile-outer" style="color:#ffffff">Best Service Deals</div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="sf-howServFinWork-box padding-lr-40">
+                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/describe.png"
+                    data-src="./images/icons/describe.png" alt=""> <span class="sf-no-step text-primary">1</span></div>
+                <h4 class="sf-tilte text-white">Find Your Service</h4>
+                <p>This helps us find your desired service</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="sf-howServFinWork-box padding-lr-40">
+                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/tasker.png"
+                    data-src="./images/icons/tasker.png" alt=""> <span class="sf-no-step text-primary">2</span></div>
+                <h4 class="sf-tilte text-white">Choose a Tasker</h4>
+                <p>This helps us determine which Taskers are best for your service</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="sf-howServFinWork-box padding-lr-40">
+                <div class="sf-icon-xl margin-b-20"> <img src="./images/icons/child-care-1.png" data-lazy-type="image"
+                    data-src="./images/icons/child-care-1.png" alt=""> <span class="sf-no-step text-primary">3</span>
+                </div>
+                <h4 class="sf-tilte text-white">Contact Us</h4>
+                <p>Contact us to get your service done</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sf-curve-topWrap">
+        <div class="sf-curveTop sf-howitwork-curveTop" style="background-color:#7042e1"></div>
+      </div>
+      <div class="sf-curve-botWrap">
+        <div class="sf-curveBot sf-howitwork-curveBot" style="background-color:#62b815"></div>
+      </div>
+      <div class="sf-overlay-main" style="opacity:; background-color:#7042e1 ">
+    </section>
+    
     <section class="section-full bg-gray sf-trustedBy-wrap" style="background:url() center fixed no-repeat;">
       <div class="container">
         <div class="section-head text-center">
@@ -825,28 +852,28 @@
           <div class="row">
             <div class="col-md-3 col-sm-6">
               <div class="sf-company-satus2 text-center">
-                <div class="sf-company-count counter">35</div>
+                <div class="sf-company-count counter">6</div>
                 <div class="sf-company-satus-name">Providers</div>
                 <div class="sf-company-satus-line" style="background-color:#7748ee"></div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
               <div class="sf-company-satus2 text-center">
-                <div class="sf-company-count counter">19</div>
+                <div><span class="sf-company-count counter">100</span><span style="font-size: 32px;">+</span></div>
                 <div class="sf-company-satus-name">Customer</div>
                 <div class="sf-company-satus-line" style="background-color:#62b815"></div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
               <div class="sf-company-satus2 text-center">
-                <div class="sf-company-count counter">4</div>
-                <div class="sf-company-satus-name">Jobs</div>
+                <div><span class="sf-company-count counter">98</span><span style="font-size: 26px;">%</span></div>
+                <div class="sf-company-satus-name">Satisfied Customer</div>
                 <div class="sf-company-satus-line" style="background-color:#feb92d"></div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6">
               <div class="sf-company-satus2 text-center">
-                <div class="sf-company-count counter">49</div>
+                <div class="sf-company-count counter">5</div>
                 <div class="sf-company-satus-name">Categories</div>
                 <div class="sf-company-satus-line" style="background-color:#2dbefd"></div>
               </div>
