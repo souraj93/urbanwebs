@@ -9,14 +9,13 @@
   <!--[if IE 7 ]><html class="isie ie7 oldie no-js" lang="en-US"> <![endif]-->
   <!--[if IE 8 ]><html class="isie ie8 oldie no-js" lang="en-US"> <![endif]-->
   <!--[if IE 9 ]><html class="isie ie9 no-js" lang="en-US"> <![endif]-->
-  <link rel="shortcut icon" href="" />
   <link rel="icon" href="./images/favicon.ico">
   <link media="only screen and (max-width: 768px)"
-    href="https://aonetheme.com/latest-service-finder/wp-content/cache/autoptimize/css/autoptimize_541e2ced151704f4ff1844c6de47ec02.css"
+    href="./css/css-file-1.css"
     rel="stylesheet">
   <title>UrbanwebS</title>
   <link rel="stylesheet" id="siteground-optimizer-combined-css-2ab39d586930e06672a92f70b7077c70"
-    href="https://aonetheme.com/latest-service-finder/wp-content/uploads/siteground-optimizer-assets/siteground-optimizer-combined-css-2ab39d586930e06672a92f70b7077c70.css"
+    href="./css/css-file-2.css"
     media="all" />
   <meta name='robots' content='noindex, nofollow' />
   <link rel='dns-prefetch' href='//www.google.com' />
@@ -24,12 +23,8 @@
   <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
   <link rel='dns-prefetch' href='//fonts.googleapis.com' />
   <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-  <link rel="alternate" type="application/rss+xml" title="Service Finder &raquo; Feed"
-    href="https://aonetheme.com/latest-service-finder/feed/" />
-  <link rel="alternate" type="application/rss+xml" title="Service Finder &raquo; Comments Feed"
-    href="https://aonetheme.com/latest-service-finder/comments/feed/" />
   <script
-    type="text/javascript">window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/aonetheme.com\/latest-service-finder\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1" } };
+    type="text/javascript">window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": ".\/js\/emoji.js" } };
       /*! This file is auto-generated */
       !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);</script>
   <link rel='stylesheet' id='google-fonts-css'
@@ -44,7 +39,7 @@
       href="https://fonts.googleapis.com/css?family=Raleway:700,400%7COpen%20Sans:Normal&#038;display=swap&#038;ver=1630301024" />
   </noscript>
   <script type='text/javascript'
-    src='https://aonetheme.com/latest-service-finder/wp-includes/js/jquery/jquery.min.js?ver=3.7.0'
+    src='./js/jquery.js'
     id='jquery-core-js'></script>
   <script type="text/javascript">// 
     var param = '';
@@ -124,19 +119,10 @@
       }
     }
     //</script>
-  <link rel="https://api.w.org/" href="https://aonetheme.com/latest-service-finder/wp-json/" />
-  <link rel="alternate" type="application/json"
-    href="https://aonetheme.com/latest-service-finder/wp-json/wp/v2/pages/2676" />
-  <link rel="EditURI" type="application/rsd+xml" title="RSD"
-    href="https://aonetheme.com/latest-service-finder/xmlrpc.php?rsd" />
   <meta name="generator" content="WordPress 6.3.1" />
   <meta name="generator" content="WooCommerce 8.0.3" />
-  <link rel="canonical" href="https://aonetheme.com/latest-service-finder/" />
-  <link rel='shortlink' href='https://aonetheme.com/latest-service-finder/' />
-  <link rel="alternate" type="application/json+oembed"
-    href="https://aonetheme.com/latest-service-finder/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faonetheme.com%2Flatest-service-finder%2F" />
-  <link rel="alternate" type="text/xml+oembed"
-    href="https://aonetheme.com/latest-service-finder/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faonetheme.com%2Flatest-service-finder%2F&#038;format=xml" />
+  <link rel="canonical" href="https://www.urbanwebs.in/" />
+  <link rel='shortlink' href='https://www.urbanwebs.in/' />
   <meta name="generator" content="Redux 4.4.5" /> <noscript>
     <style>
       .woocommerce-product-gallery {
@@ -993,8 +979,8 @@
                       </div>
                       <div class="testimonial-detail clearfix">
                         <div class="testimonial-thum radius"><img 
-                            src="//aonetheme.com/latest-service-finder/wp-content/plugins/a3-lazy-load/assets/images/lazy_placeholder.gif"
-                            data-src="https://aonetheme.com/latest-service-finder/wp-content/uploads/2020/01/pic2-1.jpg"
+                            src="./images/testimonial/client-2.jpg"
+                            data-src="./images/testimonial/client-2.jpg"
                             width="100" height="100" alt=""></div> <strong class="testimonial-name">Shrestha Sinha</strong> <span>Housewife</span>
                       </div>
                     </div>
@@ -1146,9 +1132,7 @@
     })();</script>
   <script
     type="text/javascript">if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }</script>
-  <link rel="preload" as="font" id="rs-icon-set-revicon-woff"
-    href="https://aonetheme.com/latest-service-finder/wp-content/plugins/revslider/public/assets/fonts/revicons/revicons.woff?5510888"
-    type="font/woff" crossorigin="anonymous" media="all" />
+  
   <script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=explicit'
     id='recaptcha-api-js'></script>
   <script type='text/javascript'
