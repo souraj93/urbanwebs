@@ -154,18 +154,23 @@
       margin: 10px 5px;
       padding: 10px;
     }
-    .owl-theme .owl-controls .owl-nav .owl-prev, 
-    .owl-theme .owl-controls .owl-nav .owl-next {
-      padding: 0 15px !important;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    #rev_slider_1_1_wrapper .custom.tparrows.tp-rightarrow::before {
+    
+    #rev_slider_1_1_wrapper .custom.tparrows.tp-rightarrow::before,
+    .owl-theme .owl-controls .owl-nav .owl-next::before {
       content: ">";
       font-size: 20px;
       font-weight: bold;
     }
-    #rev_slider_1_1_wrapper .custom.tparrows.tp-leftarrow::before {
+    .owl-theme .owl-controls .owl-nav .owl-prev, 
+    .owl-theme .owl-controls .owl-nav .owl-next {
+      padding: 5px 17px !important;
+    }
+    .owl-theme .owl-controls .owl-nav .owl-prev i, 
+    .owl-theme .owl-controls .owl-nav .owl-next i {
+      display: none;
+    }
+    #rev_slider_1_1_wrapper .custom.tparrows.tp-leftarrow::before,
+    .owl-theme .owl-controls .owl-nav .owl-prev::before {
       content: "<";
       font-size: 20px;
       font-weight: bold;
@@ -436,7 +441,6 @@
                 allClass[i].style.display = "inline-block";
               }
             }
-            console.log("hello ", selectVal.value, searchClass);
           } else {
             const notSearchSection = document.getElementById("providerSectionWithoutSearch");
             notSearchSection.style.display = "block";
@@ -1164,19 +1168,6 @@
   <script id="service_finder-js-plugin-custom-js-before" type="text/javascript">var rtloption = "0";</script>
   <script type='text/javascript'
     id='service_finder-js-plugin-contactform-js-extra'>var args = { "fullname": "Please insert your name", "email": "The input is not a valid email address", "comment": "Please insert comment", "myfav": "My Favorite", "addtofav": "Add to Fav" };</script>
-    <script type='text/javascript'>
-      setTimeout(() => {
-        const owlNexts = document.getElementsByClassName("owl-next");
-        for (let i = 0; i< owlNexts.length; i++) {
-          owlNexts[i].innerHTML = ">";
-        }
-        const owlPrevs = document.getElementsByClassName("owl-prev");
-        for (let i = 0; i< owlPrevs.length; i++) {
-          owlPrevs[i].innerHTML = "<";
-        }
-      }, 1000);
-      
-    </script>
   <script type='text/javascript'
     id='wc-add-to-cart-js-extra'>var wc_add_to_cart_params = { "ajax_url": "\/latest-service-finder\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/latest-service-finder\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/aonetheme.com\/latest-service-finder\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };</script>
   <script type='text/javascript'
