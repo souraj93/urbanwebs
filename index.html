@@ -232,6 +232,9 @@
       width: 40%;
       text-align: right;
     }
+    .owl-controls {
+      display: none;
+    }
 
     @media screen and (max-width: 991px) {
       #searchButton {
@@ -240,6 +243,9 @@
       .search-provider {
         width: 100%;
         margin-right: 0;
+      }
+      .owl-controls {
+        display: block;
       }
     }
     
@@ -482,6 +488,23 @@
           }
           
         };
+        setTimeout(() => {
+          const owlNexts = document.getElementsByClassName("owl-next");
+          const owlPrevs = document.getElementsByClassName("owl-prev");
+          if (owlNexts.length) {
+            const nxt = owlNexts[1];
+            nxt.onclick = () => {
+              document.getElementById('serviceId').scrollIntoView();
+            };
+          }
+          if (owlPrevs.length) {
+            const prev = owlPrevs[1];
+            prev.onclick = () => {
+              document.getElementById('serviceId').scrollIntoView();
+            };
+          }
+        }, 1000);
+        
       </script>
     </section>
     <section class="section-full bg-white sf-featurProviders-wrap"
@@ -761,7 +784,7 @@
       <div class="sf-overlay-main" style="opacity:; background-color:#ffffff ">
     </section>
     <section class="section-full bg-white sf-featurProviders-wrap"
-      style="background-image:url(); background-attachment: scroll">
+      style="background-image:url(); background-attachment: scroll" id="serviceId">
       <div class="container">
         <div class="section-head text-center">
           <h2 class="text-white" style="color:#383838"> Featured Services</h2>
@@ -784,19 +807,27 @@
                         </li>
                         <li>
                           <div>Floor mounted western toilet replacement</div>
-                          <div class="cost-div">Rs 1599</div>
+                          <div class="cost-div">Rs 1399</div>
                         </li>
                         <li>
                           <div>Western toilet installation (wall mounted)</div>
                           <div class="cost-div">Rs 1699</div>
                         </li>
                         <li>
+                          <div>Western toilet installation (floor mounted)</div>
+                          <div class="cost-div">Rs 1399</div>
+                        </li>
+                        <li>
                           <div>Shower installation (ceiling mounted)</div>
-                          <div class="cost-div">Rs 149</div>
+                          <div class="cost-div">Rs 129</div>
+                        </li>
+                        <li>
+                          <div>Toilet pot blockage removal</div>
+                          <div class="cost-div">Rs 1149</div>
                         </li>
                         <li>
                           <div>Drainage pipe blockage removal</div>
-                          <div class="cost-div">Rs 299</div>
+                          <div class="cost-div">Rs 319</div>
                         </li>
                         <li>
                           <div>Balcony drain blockage removal</div>
@@ -812,7 +843,11 @@
                         </li>
                         <li>
                           <div>Tap repair</div>
-                          <div class="cost-div">Rs 79</div>
+                          <div class="cost-div">Rs 89</div>
+                        </li>
+                        <li>
+                          <div>Tap replacement</div>
+                          <div class="cost-div">Rs 99</div>
                         </li>
                         <li>
                           <div>Bathroom tile gap filling</div>
@@ -832,7 +867,7 @@
                         </li>
                         <li>
                           <div>Wash basin installation</div>
-                          <div class="cost-div">Rs 289</div>
+                          <div class="cost-div">Rs 389</div>
                         </li>
                         <li>
                           <div>Flush tank repair (external - ceramic)</div>
@@ -844,19 +879,95 @@
                         </li>
                         <li>
                           <div>Flush tank repair (concealed)</div>
-                          <div class="cost-div">Rs 239</div>
+                          <div class="cost-div">Rs 249</div>
+                        </li>
+                        <li>
+                          <div>Overhead tank installation (500L)</div>
+                          <div class="cost-div">Rs 499</div>
+                        </li>
+                        <li>
+                          <div>Overhead tank installation (1000L)</div>
+                          <div class="cost-div">Rs 849</div>
+                        </li>
+                        <li>
+                          <div>Overhead tank installation (2000L)</div>
+                          <div class="cost-div">Rs 1049</div>
+                        </li>
+                        <li>
+                          <div>Underground tank cleaning (1000 - 1500L)</div>
+                          <div class="cost-div">Rs 1099</div>
+                        </li>
+                        <li>
+                          <div>Underground tank cleaning (1600 - 3000L)</div>
+                          <div class="cost-div">Rs 1499</div>
                         </li>
                         <li>
                           <div>Wall mounted western toilet replacement</div>
                           <div class="cost-div">Rs 1799</div>
                         </li>
                         <li>
+                          <div>Drain cover installation (Jaali)</div>
+                          <div class="cost-div">Rs 119</div>
+                        </li>
+                        <li>
+                          <div>Toilet seat cover replacement</div>
+                          <div class="cost-div">Rs 99</div>
+                        </li>
+                        <li>
+                          <div>Pipeline leakage repair (inside)</div>
+                          <div class="cost-div">Rs 219</div>
+                        </li>
+                        <li>
+                          <div>Basin and sink bottle trap installation</div>
+                          <div class="cost-div">Rs 219</div>
+                        </li>
+                        <li>
                           <div>Indian toilet installation</div>
-                          <div class="cost-div">Rs 1599</div>
+                          <div class="cost-div">Rs 1499</div>
+                        </li>
+                        <li>
+                          <div>Minor fittings installation</div>
+                          <div class="cost-div">Rs 99</div>
                         </li>
                         <li>
                           <div>Flush tank replacement</div>
                           <div class="cost-div">Rs 449</div>
+                        </li>
+                        <li>
+                          <div>Water meter installation</div>
+                          <div class="cost-div">Rs 319</div>
+                        </li>
+                        <li>
+                          <div>Motor installation</div>
+                          <div class="cost-div">Rs 399</div>
+                        </li>
+                        <li>
+                          <div>Washing machine inlet installation</div>
+                          <div class="cost-div">Rs 99</div>
+                        </li>
+                        <li>
+                          <div>Tap filter installation</div>
+                          <div class="cost-div">Rs 99</div>
+                        </li>
+                        <li>
+                          <div>Shower filter installation</div>
+                          <div class="cost-div">Rs 119</div>
+                        </li>
+                        <li>
+                          <div>Main line filter installation</div>
+                          <div class="cost-div">Rs 319</div>
+                        </li>
+                        <li>
+                          <div>New bathroom pipeline and fittings installation (inside)</div>
+                          <div class="cost-div">Rs 8999</div>
+                        </li>
+                        <li>
+                          <div>New kitchen pipeline and fittings installation (inside)</div>
+                          <div class="cost-div">Rs 4499</div>
+                        </li>
+                        <li>
+                          <div>Plumber site visit</div>
+                          <div class="cost-div">Rs 149</div>
                         </li>
                       </ul>
                     </div>
@@ -892,23 +1003,23 @@
                       <ul>
                         <li>
                           <div>Kitchen sink cleaning</div>
-                          <div class="cost-div">Rs 89</div>
+                          <div class="cost-div">Rs 75</div>
                         </li>
                         <li>
                           <div>Utensil removal & placing back</div>
-                          <div class="cost-div">Rs 349</div>
+                          <div class="cost-div">Rs 319</div>
                         </li>
                         <li>
                           <div>Gas stove cleaning</div>
-                          <div class="cost-div">Rs 89</div>
+                          <div class="cost-div">Rs 75</div>
                         </li>
                         <li>
                           <div>Microwave cleaning</div>
-                          <div class="cost-div">Rs 129</div>
+                          <div class="cost-div">Rs 119</div>
                         </li>
                         <li>
                           <div>Trolley & shelves cleaning</div>
-                          <div class="cost-div">Rs 799</div>
+                          <div class="cost-div">Rs 749</div>
                         </li>
                         <li>
                           <div>Empty kitchen cleaning</div>
@@ -932,7 +1043,7 @@
                         </li>
                         <li>
                           <div>Chimney cleaning</div>
-                          <div class="cost-div">Rs 499</div>
+                          <div class="cost-div">Rs 449</div>
                         </li>
                         <li>
                           <div>Fridge deep cleaning</div>
@@ -940,46 +1051,36 @@
                         </li>
                         <li>
                           <div>Move-in kitchen cleaning</div>
-                          <div class="cost-div">Rs 999</div>
+                          <div class="cost-div">Rs 949</div>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="item">
                 <div id="proid-31">
                   <div class="sf-feaProvideer-wrap clearfix">
                     <div class="sf-categoriesBox-text">
                       <h4>Home Cleaning</h4>
                       <ul>
                         <li>
-                          <div>1 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 2799</div>
+                          <div>Furnished bedroom cleaning (per room)</div>
+                          <div class="cost-div">Rs 699</div>
                         </li>
                         <li>
-                          <div>2 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 3299</div>
-                        </li>
-                        <li>
-                          <div>3 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 4299</div>
-                        </li>
-                        <li>
-                          <div>4 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 4899</div>
-                        </li>
-                        <li>
-                          <div>5 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 5699</div>
+                          <div>Furnished living room cleaning (per room)</div>
+                          <div class="cost-div">Rs 749</div>
                         </li>
                         <li>
                           <div>Ceiling fan cleaning per fan</div>
-                          <div class="cost-div">Rs 39</div>
+                          <div class="cost-div">Rs 49</div>
                         </li>
                         <li>
                           <div>Exhaust fan cleaning per fan</div>
-                          <div class="cost-div">Rs 69</div>
+                          <div class="cost-div">Rs 75</div>
+                        </li>
+                        <li>
+                          <div>Balcony cleaning</div>
+                          <div class="cost-div">Rs 299</div>
                         </li>
                       </ul>
                     </div>
@@ -1035,272 +1136,11 @@
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
-        <div class="section-content" id="providerSectionWithSearch">
-          <div class="row">
-            <div class="xfeatured-box-slider">
-                <div id="proid-35" >
-                  <div class="sf-feaProvideer-wrap clearfix">
-                    <div class="sf-categoriesBox-text">
-                      <h4>Plumbing Services</h4>
-                      <ul>
-                        <li>
-                          <div>Western toilet repair (floor mounted)</div>
-                          <div class="cost-div">Rs 599</div>
-                        </li>
-                        <li>
-                          <div>Floor mounted western toilet replacement</div>
-                          <div class="cost-div">Rs 1599</div>
-                        </li>
-                        <li>
-                          <div>Western toilet installation (wall mounted)</div>
-                          <div class="cost-div">Rs 1699</div>
-                        </li>
-                        <li>
-                          <div>Shower installation (ceiling mounted)</div>
-                          <div class="cost-div">Rs 149</div>
-                        </li>
-                        <li>
-                          <div>Drainage pipe blockage removal</div>
-                          <div class="cost-div">Rs 299</div>
-                        </li>
-                        <li>
-                          <div>Balcony drain blockage removal</div>
-                          <div class="cost-div">Rs 219</div>
-                        </li>
-                        <li>
-                          <div>Jet spray (Installation/ Repair)</div>
-                          <div class="cost-div">Rs 99</div>
-                        </li>
-                        <li>
-                          <div>Hot & cold water tap mixer repair</div>
-                          <div class="cost-div">Rs 219</div>
-                        </li>
-                        <li>
-                          <div>Tap repair</div>
-                          <div class="cost-div">Rs 79</div>
-                        </li>
-                        <li>
-                          <div>Bathroom tile gap filling</div>
-                          <div class="cost-div">Rs 1399</div>
-                        </li>
-                        <li>
-                          <div>Kitchen tile gap filling</div>
-                          <div class="cost-div">Rs 899</div>
-                        </li>
-                        <li>
-                          <div>Waste pipe leakage</div>
-                          <div class="cost-div">Rs 99</div>
-                        </li>
-                        <li>
-                          <div>Wash basin blockage removal</div>
-                          <div class="cost-div">Rs 149</div>
-                        </li>
-                        <li>
-                          <div>Wash basin installation</div>
-                          <div class="cost-div">Rs 289</div>
-                        </li>
-                        <li>
-                          <div>Flush tank repair (external - ceramic)</div>
-                          <div class="cost-div">Rs 229</div>
-                        </li>
-                        <li>
-                          <div>Flush tank repair (external - PVC)</div>
-                          <div class="cost-div">Rs 119</div>
-                        </li>
-                        <li>
-                          <div>Flush tank repair (concealed)</div>
-                          <div class="cost-div">Rs 239</div>
-                        </li>
-                        <li>
-                          <div>Wall mounted western toilet replacement</div>
-                          <div class="cost-div">Rs 1799</div>
-                        </li>
-                        <li>
-                          <div>Indian toilet installation</div>
-                          <div class="cost-div">Rs 1599</div>
-                        </li>
-                        <li>
-                          <div>Flush tank replacement</div>
-                          <div class="cost-div">Rs 449</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div id="proid-34" >
-                  <div class="sf-feaProvideer-wrap clearfix">
-                    <div class="sf-categoriesBox-text">
-                      <h4>Bathroom Cleaning</h4>
-                      <ul>
-                        <li>
-                          <div>Move-in bathroom cleaning</div>
-                          <div class="cost-div">Rs 499</div>
-                        </li>
-                        <li>
-                          <div>Classic bathroom cleaning</div>
-                          <div class="cost-div">Rs 349</div>
-                        </li>
-                        <li>
-                          <div>Intense bathroom cleaning</div>
-                          <div class="cost-div">Rs 449</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div id="proid-29" >
-                  <div class="sf-feaProvideer-wrap clearfix">
-                    <div class="sf-categoriesBox-text">
-                      <h4>Kitchen Cleaning</h4>
-                      <ul>
-                        <li>
-                          <div>Kitchen sink cleaning</div>
-                          <div class="cost-div">Rs 89</div>
-                        </li>
-                        <li>
-                          <div>Utensil removal & placing back</div>
-                          <div class="cost-div">Rs 349</div>
-                        </li>
-                        <li>
-                          <div>Gas stove cleaning</div>
-                          <div class="cost-div">Rs 89</div>
-                        </li>
-                        <li>
-                          <div>Microwave cleaning</div>
-                          <div class="cost-div">Rs 129</div>
-                        </li>
-                        <li>
-                          <div>Trolley & shelves cleaning</div>
-                          <div class="cost-div">Rs 799</div>
-                        </li>
-                        <li>
-                          <div>Empty kitchen cleaning</div>
-                          <div class="cost-div">Rs 999</div>
-                        </li>
-                        <li>
-                          <div>With appliance cleaning</div>
-                          <div class="cost-div">Rs 1499</div>
-                        </li>
-                        <li>
-                          <div>With appliance & chimney cleaning</div>
-                          <div class="cost-div">Rs 1899</div>
-                        </li>
-                        <li>
-                          <div>With chimney cleaning</div>
-                          <div class="cost-div">Rs 1399</div>
-                        </li>
-                        <li>
-                          <div>Complete kitchen cleaning</div>
-                          <div class="cost-div">Rs 1399</div>
-                        </li>
-                        <li>
-                          <div>Chimney cleaning</div>
-                          <div class="cost-div">Rs 499</div>
-                        </li>
-                        <li>
-                          <div>Fridge deep cleaning</div>
-                          <div class="cost-div">Rs 299</div>
-                        </li>
-                        <li>
-                          <div>Move-in kitchen cleaning</div>
-                          <div class="cost-div">Rs 999</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div id="proid-28" >
-                  <div class="sf-feaProvideer-wrap clearfix">
-                    <div class="sf-categoriesBox-text">
-                      <h4>Home Cleaning</h4>
-                      <ul>
-                        <li>
-                          <div>1 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 2799</div>
-                        </li>
-                        <li>
-                          <div>2 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 3299</div>
-                        </li>
-                        <li>
-                          <div>3 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 4299</div>
-                        </li>
-                        <li>
-                          <div>4 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 4899</div>
-                        </li>
-                        <li>
-                          <div>5 BHK full home cleaning</div>
-                          <div class="cost-div">Rs 5699</div>
-                        </li>
-                        <li>
-                          <div>Ceiling fan cleaning per fan</div>
-                          <div class="cost-div">Rs 39</div>
-                        </li>
-                        <li>
-                          <div>Exhaust fan cleaning per fan</div>
-                          <div class="cost-div">Rs 69</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div id="proid-31" >
-                  <div class="sf-feaProvideer-wrap clearfix">
-                    <div class="sf-categoriesBox-text">
-                      <h4>Sofa Cleaning</h4>
-                      <ul>
-                        <li>
-                          <div>3 sofa seats</div>
-                          <div class="cost-div">Rs 449</div>
-                        </li>
-                        <li>
-                          <div>4 sofa seats</div>
-                          <div class="cost-div">Rs 599</div>
-                        </li>
-                        <li>
-                          <div>5 sofa seats</div>
-                          <div class="cost-div">Rs 699</div>
-                        </li>
-                        <li>
-                          <div>6 sofa seats</div>
-                          <div class="cost-div">Rs 799</div>
-                        </li>
-                        <li>
-                          <div>7 sofa seats</div>
-                          <div class="cost-div">Rs 949</div>
-                        </li>
-                        <li>
-                          <div>8 sofa seats</div>
-                          <div class="cost-div">Rs 1099</div>
-                        </li>
-                        <li>
-                          <div>9 sofa seats</div>
-                          <div class="cost-div">Rs 1149</div>
-                        </li>
-                        <li>
-                          <div>10 sofa seats</div>
-                          <div class="cost-div">Rs 1299</div>
-                        </li>
-                        <li>
-                          <div>11 sofa seats</div>
-                          <div class="cost-div">Rs 1499</div>
-                        </li>
-                        <li>
-                          <div>12 sofa seats</div>
-                          <div class="cost-div">Rs 1599</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <div class="sf-curve-topWrap">
         <div class="sf-curveTop sf-feaPro-curveTop" style="background-color:#7754f4"></div>
